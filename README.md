@@ -3,6 +3,8 @@
 
 TickerForge provides a standardized approach to resolving financial derivative symbols and handling market metadata. This repository serves as the central directory for the specification and its language-specific implementations.
 
+See `REPOSITORY_GUIDE.md` for the intended split between the ecosystem repo, the canonical spec repo, and language-specific implementation repos.
+
 ### 🧩 Available Implementations
 
 * 📖 [**tickerforge-spec**](https://github.com/mesias/tickerforge-spec) — The core specification, including metadata for assets, future nomenclatures, and market rules.
