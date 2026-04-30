@@ -85,6 +85,7 @@ Capabilities shared across both implementations:
 
 - **Multi-market futures parsing** -- resolve `INDM26` (B3) and `ESM26` (CME) from the same spec tree
 - **Multi-market options parsing** -- equity options (`PETRA30`), index options (`IBOVK26C120000`), dollar options (`DOLK26C5000`), and more
+- **Cash Equities** -- explicit definitions for cash assets (e.g. `PETR4`, `VALE3`) including their regular trading sessions, lot multipliers, and aliases.
 - **Ticker generation** -- produce the front-month ticker for any contract at a given date
 - **Contract-centric API** -- look up tick size, lot size, session times, and exchange timezone for any contract
 - **Exchange calendars** -- spec-driven holiday rules (fixed dates, Easter offsets, nth-weekday) with fallback to external calendar providers
@@ -96,7 +97,7 @@ Capabilities shared across both implementations:
 
 | Market | Exchange | Assets |
 |--------|----------|--------|
-| B3 | Brasil, Bolsa, Balcao | Futures (IND, WIN, DOL, WDO, DI1, DDI, DAP, ...) and Options (equity, index, dollar, interest rate) |
+| B3 | Brasil, Bolsa, Balcao | Futures (IND, WIN, DOL, WDO, DI1, DDI, DAP, ...), Options (equity, index, dollar, interest rate), and **Cash Equities** (PETR4, VALE3, ITUB4, BBDC4, ...) |
 | CME | Chicago Mercantile Exchange | Futures (ES, NQ, YM, RTY, GC, SI, CL, NG, ZB, ZN, ZF, ZT, 6E, 6J, ...) |
 
 Adding a new market requires only a YAML file under `spec/contracts/<market>/` with the appropriate `futures:` and/or `options:` blocks.
