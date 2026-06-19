@@ -97,7 +97,7 @@ Capabilities shared across both implementations:
 
 | Market | Exchange | Assets |
 |--------|----------|--------|
-| B3 | Brasil, Bolsa, Balcao | Futures (IND, WIN, DOL, WDO, DI1, DDI, DAP, ...), Options (equity, index, dollar, interest rate), and **Cash Equities** (PETR4, VALE3, ITUB4, BBDC4, ...) |
+| B3 | Brasil, Bolsa, Balcao | Futures (IND, WIN, DOL, WDO, DI1, BIT, ISP, WSP, ETH, DDI, DAP, ...), Options (equity, index, dollar, interest rate), and **Cash Equities** (PETR4, VALE3, ITUB4, BBDC4, ...) |
 | CME | Chicago Mercantile Exchange | Futures (ES, NQ, YM, RTY, GC, SI, CL, NG, ZB, ZN, ZF, ZT, 6E, 6J, ...) |
 
 Adding a new market requires only a YAML file under `spec/contracts/<market>/` with the appropriate `futures:` and/or `options:` blocks.
